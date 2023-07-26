@@ -17,4 +17,8 @@ def unittest() {
     if (app_lang == "maven") {
         sh 'mvn package'
     }
+
+    if (app_lang == "python") {
+        sh 'echo python'
+    }
 }
