@@ -41,7 +41,7 @@ def call() {
     }
 
     catch(Build Fail) {
-        sh 'echo Fail'
+        common.email('failed')
     }
 
 }
