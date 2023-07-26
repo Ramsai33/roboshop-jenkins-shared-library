@@ -40,8 +40,8 @@ def call() {
         }
     }
 
-    catch(Build Fail) {
-        common.email('failed')
+    catch(Exception e) {
+        common.email("failed")
     }
 
 }
