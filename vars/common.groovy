@@ -11,7 +11,7 @@ def compile() {
 def unittest() {
     if (app_lang == "nodejs") {
       //  sh 'npm test'
-        echo "unittest"
+        echo unittest
     }
 
     if (app_lang == "maven") {
