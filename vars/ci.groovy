@@ -40,7 +40,7 @@ def call() {
         }
     }
 
-    catch(ExceptionName e1) {
+    catch(Build Fail) {
         sh 'echo Fail'
     }
 
