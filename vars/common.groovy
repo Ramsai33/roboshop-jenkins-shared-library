@@ -10,8 +10,8 @@ def compile() {
 
 def unittest() {
     if (app_lang == "nodejs") {
-      //  sh 'npm test'
-        sh 'echo unittest'
+       sh 'npm test'
+//        sh 'echo unittest'
     }
 
     if (app_lang == "maven") {
