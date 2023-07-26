@@ -1,13 +1,17 @@
 def call() {
     pipeline {
 
-        agent any
+        agent {
+            label 'workstation'
+        }
 
         stages {
 
             stage('Build/compile') {
                 steps{
-                    echo 'Build'
+                    script{
+                        common.compile
+                    }
                 }
             }
 
